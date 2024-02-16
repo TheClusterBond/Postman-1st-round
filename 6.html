@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(253, 246, 246);">
+    <div class="header">
+        <div class="left-section">
+          <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+                  <a href="index.html"> <img class="tmdb-logo" src="29c6fee-blue_short.svg"> </a>
+        </div>
+        <div class="middle-section">
+          <input class="search-bar" type="text" placeholder="Search">
+          <button class="search-button">
+            <img class="search-icon" src="icons/subscriptions.svg">
+            <div class="tooltip">Search</div>
+          </button>
+          <button class="voice-search-button">
+            <img class="voice-search-icon" src="icons/microphone.svg">
+            <div class="tooltip">Search with your voice</div>
+          </button>
+        </div>
+        <div class="right-section">
+          <div class="upload-icon-container">
+            <button class="btn btn-danger" 
+            data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+          </div>
+          <div class="upload-icon-container">
+            <button class="btn btn-success" 
+            data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          </div>
+          <img class="bookmark" src="icons/bookmark.svg">
+          
+          <div class="notifications-icon-container">
+            <img class="notifications-icon" src="icons/originals.svg">
+            
+            <div class="notifications-count">3</div>
+          </div>
+          <img class="current-user-picture" src="channel-pictures/profile-photo.jpg">
+          
+        </div>
+      </div>
+  
+  
+  <!-- -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up to TMDB</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login to TMDB</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div class="sidebar">
+        <a href="index.html" ><div class="sidebar-link1">
+          <img src="icons/library.svg">
+          <div >Home</div>
+        </div> </a>
+        <a href="explore.html"> <div class="sidebar-link2">
+          <img   src="icons/film.svg">
+          <div>Explore</div> </a>
+        </div> 
+        <a href="favourites.html"><div class="sidebar-link3" >
+          <img src="icons/heart-fill.svg">
+          <div>Favourites</div> 
+        </div> </a>
+        <a href="netflix.html">    <div class="sidebar-link4">
+          <img src="channel-pictures/netflix.jpg">
+          <div>Netflix</div>
+        </div> </a>
+        <a href="prime.html"><div class="sidebar-link5">
+          <img src="channel-pictures/prime.jpg">
+          <div>Prime</div>
+        </div> </a>
+        <a href="hotstar.html"  ><div class="sidebar-link6">
+          <img src="channel-pictures/hotstar.jpg">
+          <div>Hotstar</div>
+        </div> </a>
+      </div> 
+  
+      <div class="f">
+        <img class="backdrop" src="backdrop-path/6b.jpg">
+      <p></p>
+        <div class="t">
+          <div class="b">
+           <h1 class="heading">Aquaman and the Lost Kingdom</h1>
+           <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+           <label class="btn" for="btn-check-4"><img src="icons/bookmark.svg" ></label>
+          </div>
+          <p class="description">Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.</p>
+          <div class="votes">
+          <p>Rating: 6.918</p>
+          <p>No. of votes: 1598</p>
+        </div>
+        <p class="popularity"> Popularity: 1088.68</p>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Rate this Movie</option>
+          <option value="1">One &star;</option>
+          <option value="2">Two &star; &star;</option>
+          <option value="3">Three &star; &star; &star; </option>
+          <option value="4">Four &star; &star; &star; &star; </option>
+          <option value="5">Five &star; &star; &star; &star; &star; </option>
+          <option value="6">Six &star; &star; &star; &star; &star; &star; </option>
+          <option value="7">Seven &star; &star; &star; &star; &star; &star; &star; </option>
+          <option value="8">Eight &star; &star; &star; &star; &star; &star; &star; &star; </option>
+          <option value="9">Nine &star; &star; &star; &star; &star; &star; &star; &star; &star; </option>
+          <option value="10">Ten &star; &star; &star; &star; &star; &star; &star; &star; &star; &star; </option>
+        </select>
+        </div>
+      </div>
+  
+      
+      <div class="container" style="font-weight: bolder;">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 TMDB, Inc</p>
+          </footer>
+        </div>
+    
+        <script src="script1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+</body>
+</html>
