@@ -1,0 +1,101 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link1,
+  .sidebar-link2,
+  .sidebar-link3,
+  .sidebar-link4,
+  .sidebar-link5,
+  .sidebar-link6{
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .sidebar-link1:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .sidebar-link2:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .sidebar-link3:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .sidebar-link4:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .sidebar-link5:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .sidebar-link6:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  .sidebar-link1 img {
+    height: 30px;
+    margin-bottom: 4px;
+  }
+  .sidebar-link2 img {
+    height: 30px;
+    margin-bottom: 4px;
+  }
+  .sidebar-link3 img {
+    height: 30px;
+    margin-bottom: 4px;
+  }
+  .sidebar-link4 img {
+    height: 30px;
+    margin-bottom: 4px;
+  }
+  .sidebar-link5 img {
+    height: 30px;
+    margin-bottom: 4px;
+  }
+  .sidebar-link6 img {
+    height: 30px;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-link1 div {
+    font-family: Roboto, Arial;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+  }
+  .sidebar-link2 div {
+    font-family: Roboto, Arial;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    text-decoration: underline;
+  }
+  .sidebar-link3 div {
+    font-family: Roboto, Arial;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    text-decoration: underline;
+  }
+  .sidebar-link4 div {
+    font-family: Roboto, Arial;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+  }
+  .sidebar-link5 div {
+    font-family: Roboto, Arial;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+  }
+  .sidebar-link6 div {
+    font-family: Roboto, Arial;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+  }
